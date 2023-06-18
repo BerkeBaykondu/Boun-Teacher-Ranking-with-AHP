@@ -1,25 +1,22 @@
-# Boun-Teacher-Ranking-with-AHP
-Öğrencilerin ders programı oluşturma esnasında yararlanması için dersi veren öğretmenlerin puanlanma sürecini içeren bir projedir
+#Boun-Teacher-Ranking-with-AHP
+This project is aimed at ranking teachers who offer courses for students to use during their course scheduling process.
 
-Bu proje web-scraping veri görselleştirme, cosine similarity metodu ile yorumları puanlandırma ve excel dosyası üzerinden Analytic Hierarchy Process yöntemi ile puanlandırma içermektedir.
+#Project Description
+This project encompasses various components such as web scraping, data visualization, rating comments using cosine similarity, and ranking using the Analytic Hierarchy Process (AHP) method on an Excel file.
 
-Web-Scraping
+#Web Scraping
+The project collects student comments about Boğaziçi University courses and the courses offered in the current semester from the websites "https://www.bouncim.com/" and "https://kilicbaran.github.io/boun-course-planner/" using web scraping techniques.
 
-https://www.bouncim.com/ ve https://kilicbaran.github.io/boun-course-planner/ sitelerinden web-scraping yolu ile Boğaziçi Üniversitesi dersleri hakkındaki öğrenci yorumları ve mevcut dönemde verilen dersler elde edilmiştir
+#Data Visualization
+The obtained data is visualized using various techniques to enhance understanding.
 
-Data Visualisition
+#Cosine Similarity
+Based on the student comments from the "https://www.bouncim.com/" website, teachers who offer courses are rated using cosine similarity to evaluate the similarities of certain example sentences according to three main criteria: being student-friendly, being competent in their field, and their English proficiency.
 
-Elde edilen veriler hakkında çeşitli görselleştirmeler yapılmıştır.
+#Data Preprocessing
+Two separate datasets obtained through web scraping are merged after undergoing various preprocessing steps. This process results in a final dataset where only the ratings of available courses can be seen. The final dataset is obtained in the form of an Excel file.
 
-Cosine Similarity
-
-https://www.bouncim.com/ sitesinde ki öğrenci yorumlarından yola çıkarak dersi veren öğretmenlerin puanlandırmada 3 ana kriter olan öğrenci dostu olması, alanında yetkin olması ve ingilizce yeterliliklerine göre Cosine similarity yöntemiyle belirli örnek cümleler benzerlikleri değerlendirilerek puanlandırılması
-
-Data preprocessing
-
-Web-scraping ile elde edilen 2 ayrı verisetinin çeşitli ön hazırlıklar sonucunda birleştirilmesi ve bu sayede sadece mevcut olan dersler hakkında puanların görüleceği bir final veriseti haline getirilmesi ve excel dosyası olarak elde edilmesi
-
-AHP Ranking
-Excel dosyası üzerinde AHP yöntemi uygulanarak derslerin ve dersi veren öğretmenler puanlanmıştır.
+#AHP Ranking
+Courses and the teachers who offer them are ranked using the Analytic Hierarchy Process (AHP) method applied to the Excel file.
 
 
